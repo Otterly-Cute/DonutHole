@@ -70,7 +70,8 @@ public class Hole_Movement : MonoBehaviour
              Mathf.Clamp(touch.z, -moveLimits.y, moveLimits.y)
         );
 
-        holeCenter.position = targetPos;
+        //holeCenter.position = targetPos;
+        holeCenter.position = touch;
     }
 
     void UpdateHoleVerticesPosition()
